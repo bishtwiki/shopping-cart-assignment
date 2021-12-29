@@ -1,0 +1,21 @@
+.carousel-indicators {
+	button {
+		border-radius: 100% !important;
+        background-color:#000 !important;
+       height: 3px !important;
+        width:4px !important;
+        padding:1px !important;
+        margin:8px !important
+        
+	}
+}
+
+.carousel-control-prev, .carousel-control-next{
+   top:40% !important;
+    background-color: #000 !important;
+    text-decoration: none;
+    width: 60px;
+    height: 50px;
+    opacity: 0.3;
+}
+   

@@ -1,0 +1,33 @@
+.row {
+	&:before {
+		content: "";
+		display: table;
+		clear: both;
+		box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5);
+		bottom: 30px;
+		left: 0;
+		width: 80%;
+		padding:15px 15px;
+		z-index: 1;
+		margin: 0px auto;
+        position: relative;
+		
+	}
+}
+
+
+	.middle {
+		text-align: center;
+		vertical-align: middle;
+       padding: 10px;
+	}
+
+p {
+	color: rgb(54, 53, 53);
+	font-size: 14px;
+}
+.image {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
