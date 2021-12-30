@@ -34,9 +34,10 @@ const Banner =()=>{
   
 <Carousel nextIcon="NEXT" nextLabel="Next" prevIcon="PREV">
 
-{ SortBanner.filter(sortval=>sortval.isActive===true).map(({bannerImageUrl,bannerImageAlt})=>(
-  <Carousel.Item>
+{ SortBanner.filter(sortval=>sortval.isActive===true).map(({id,bannerImageUrl,bannerImageAlt})=>(
+  <Carousel.Item key ={id}>
   <img
+  
      className="d-block w-100"
     src={bannerImageUrl}
     alt={bannerImageAlt}

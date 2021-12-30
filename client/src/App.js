@@ -1,11 +1,19 @@
 import React from 'react'
 import './App.css';
-import Homepage from './Pages/Homepage/Homepage';
+import Footer from './components/Footer/Footer.component';
+import ErrorBoundary from './components/ErrorBoundary/Errorboundary';
+
+import {AllRoutes} from './Routes';
+
 
 function App() {
   return (
     <>
-    <Homepage/>
+    <ErrorBoundary>
+    <AllRoutes/>
+    <Footer></Footer>
+    </ErrorBoundary>
+   
     </>
     
   );

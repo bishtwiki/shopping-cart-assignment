@@ -1,0 +1,44 @@
+
+.navbar-custom {
+    padding-left:80px;
+    
+	
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+}
+.spacing-nav{
+    padding:0x;
+    margin: 0px;
+}
+.upper-nav{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color:rgba(0, 0, 0, 0.55);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.navbar-shadow{
+    box-shadow: 0 8px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0px;
+    margin-top:-10px;
+}
+.navbar-bottom{
+    bottom: -13px;
+    position: relative;
+
+}
+.cart-image{
+    filter: invert(17%) sepia(73%) saturate(6593%) hue-rotate(29deg) brightness(102%) contrast(101%);}
+.cart-style{
+    font-size: 14px;
+    background-color: rgb(226, 226, 226);
+    padding-top:5px;
+    padding-bottom: 5px;
+}

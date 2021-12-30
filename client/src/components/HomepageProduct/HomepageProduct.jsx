@@ -2,17 +2,16 @@ import React from 'react'
 import HomepageList from "../HomepageList/HomepageList.component"
 import './HomepageProduct.style.scss'
 
-const HomepageProduct =({...otherprops})=>{
-  
 
+const HomepageProduct =({...otherprops})=>{
   return (
       <>
       
-      <div className='product-list-image'>
-        
+       <div className='product-list-image'>
       <HomepageList {...otherprops}  />
-     
       </div>
+     
+      
       </>
   )  
 
