@@ -1,41 +1,52 @@
 import React from "react";
-import { Container, Navbar, Nav } from 'react-bootstrap'
+
 import logo from '../../assets/logo.png'
 import cart from '../../assets/cart.svg'
 import './Header.style.scss'
 import {NavLink} from 'react-router-dom'
+
+  /* Header Navigation */
+
 const Header = () => {
-    return (
+ return (
         <>
-            <div className="header">
-                <Container>
-                    <Navbar className="justify-content-end spacing-nav ">
-                        <Nav className="mr-auto" >
-                            <NavLink className="upper-nav" to="signin">SignIn</NavLink>
-                        
-                            <NavLink className="upper-nav" to="register">Register</NavLink>
-                            </Nav>
-                    </Navbar>
-                </Container>
-                <Navbar className="navbar-shadow" expand="lg">
-                    <Container>
-                        <Navbar.Brand href="#home"><img src={logo} className="logo" /></Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse className="navbar-bottom" id="basic-navbar-nav nav-base">
-                            <Nav className="me-auto navbar-custom">
-                                <NavLink className="upper-nav" to="/">Home</NavLink>
-                                <NavLink  className="upper-nav"to="products">Products</NavLink>
-
-                            </Nav>
-                            <Nav className="cart-style">
-                                <Nav.Link href="#deets" ><img className="cart-image" src={cart} width="27px" /></Nav.Link>
-                                <Nav.Link href="#deets" >0 Items</Nav.Link>
-
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
+        <header className="header">
+            <div className="container">
+             <div className="row">
+            <div className="col-ls-12">
+            {/* TopNav Signin Menu */}
+            
+            <div className="topnav">
+            <div className="topnav-right">
+            <NavLink to='signin'> SignIn</NavLink>
+            <NavLink to ="register">Register</NavLink>
             </div>
+            </div>
+            </div>
+            </div>
+            {/* Topnav End here */}
+
+            {/* Main Menu Start */}
+            <div className="clear"></div>
+            <div className="row">
+                <div className="col-ls-12">
+                <div className="topnav">
+                <NavLink to="/">  <img className="logo" src={logo} alt="logo"></img></NavLink>
+              <ul className="header-container">
+              <NavLink to="/">  <li>Home</li></NavLink>
+              <NavLink to="products"> <li>Products</li></NavLink>
+            <li className="topnav-right bg-cart ">
+             
+                 <img className="cart-image" src={cart} alt="cart" /> 0 items
+                 
+            </li>
+            </ul>
+            </div>
+            </div>
+         
+             </div>
+             </div>
+             </header>
 
         </>
     )
