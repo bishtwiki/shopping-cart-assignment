@@ -1,6 +1,5 @@
 import React from "react"
 import HomepageProduct from "../HomepageProduct/HomepageProduct"
-import { useEffect, useState } from "react"
 import { HocWrapper } from '../HOC/WithData.js'
 
 const HomepageLayout = ({ data }) => {
