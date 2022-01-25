@@ -4,6 +4,8 @@ import Custombutton from '../CustomButton/customButton.component'
 import './Products.style.scss'
 import { Additem } from '../../Redux/cart/cart.action'
 import { connect } from "react-redux";
+import './Product.responsive.scss'
+
 const ProductsFetching = ({ Additem }) => {
 
   const [Productsdata, SetProductsdata] = useState([]);

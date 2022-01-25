@@ -1,0 +1,57 @@
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+    .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right:16px;
+    }
+    .topnav{
+        a{
+            padding-left:5px;
+        }
+    }
+    .topnav-right {
+        padding-right:10px;
+        
+        a{
+              margin-left:4px;
+             
+        }
+    }
+    .header-container{
+       
+        padding:0px;
+        position: relative;
+        top:25px;
+        padding-left:30px;
+     }
+    .logo{
+        width:130px;
+        padding-bottom: 10px;
+    }
+.middle{
+    font-size:13px;
+   
+}
+.image{
+    padding:0px;
+    margin-top:10px;
+    
+}
+.custom-button{
+    font-size: 13px;
+}
+
+.footer{
+    padding:10px;
+    text-align: center;
+    font-size:13px;
+}
+
+
+ 
+
+
+}

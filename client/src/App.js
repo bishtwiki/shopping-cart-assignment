@@ -7,6 +7,7 @@ import { AllRoutes } from './Routes';
 import {auth,createUserProfileDocument} from './firebase.util'
 import { connect } from 'react-redux'
 import {setCurrentUser} from './Redux/user/user.action'
+import './responsive_tab.style.scss'
 
 
 

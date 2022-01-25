@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomepageList.style.scss'
 import CustomButton from '../CustomButton/customButton.component'
+
 const HomepageList = ({ name, description, imageUrl, order, btntext }) => {
   return (
     <>
