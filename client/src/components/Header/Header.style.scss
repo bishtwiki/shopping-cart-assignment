@@ -57,7 +57,12 @@
     filter: invert(17%) sepia(73%) saturate(6593%) hue-rotate(29deg) brightness(102%) contrast(101%);}
 
     header{
+        position: sticky;
         box-shadow: 0 5px 3px -1px rgba(0, 0, 0, 0.3);
+    background: #fff;
+        top:0;
+        width: 100%;
+        z-index: 3;
     }
        
 .bg-cart{

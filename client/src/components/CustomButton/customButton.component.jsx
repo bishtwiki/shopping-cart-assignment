@@ -4,7 +4,7 @@ const Custombutton=({children,...otherprops})=>
 {
     return <>
 
-<button className="custom-button" {...otherprops}>
+<button className={"custom-button" + (children=='Start shopping' ? ' showcenter':' showleft')} {...otherprops}>
 {children}
 </button>
     </>

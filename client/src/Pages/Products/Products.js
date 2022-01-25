@@ -4,7 +4,7 @@ import ProductsFetching from "../../components/Products/ProductsFetching.compone
 const Products=()=>{
     return (
     <>
-   
+  
     <div className="container">
         <div className="row">
 <div className="col-ls-custom">
@@ -15,7 +15,7 @@ const Products=()=>{
     </div>
     </div>
     </div>
-  
+    
      
  </>)
 }

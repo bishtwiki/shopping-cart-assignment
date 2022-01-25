@@ -5,11 +5,19 @@
     letter-spacing: 0.5px;
     line-height: 20px;
     padding: 0 20px 0 20px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: rgb(180, 7, 7);
     color: white;
-
+text-align: left;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+
+    
  }
-  
+ .showleft{
+   text-align: left;
+}
+.showcenter{
+   text-align: center;
+}

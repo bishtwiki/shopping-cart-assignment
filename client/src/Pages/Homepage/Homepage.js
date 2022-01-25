@@ -1,14 +1,18 @@
 import React from "react";
-import './homepage.style.scss'
+
 import HomepageLayout from "../../components/HomepageLayout/HomepageLayout.component";
 import Banner from '../../components/Banner/Banner.component'
 const Homepage = () => {
     return (
         <>
             <div className="container">
+                
                 <Banner />
+                
                 <HomepageLayout />
-            </div>
+                </div>
+                
+           
         </>)
 }
 
