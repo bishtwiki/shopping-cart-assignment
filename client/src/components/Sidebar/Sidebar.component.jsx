@@ -5,14 +5,21 @@ const Sidebar=({data})=>{
    
     return (
     <>
+    
     <div className="sidebar">
     <ul>
     {   data.filter(sortval => sortval.enabled === true).map(({ id, name }) => (
                <li key={id} >{name}</li>
             ))}
      </ul>
-    </div>
-       
+     
+     <select className="sidebar-dropdown">
+    {   data.filter(sortval => sortval.enabled === true).map(({ id, name }) => (
+               <option key={id} >{name}</option>
+            ))}
+     </select>
+     </div>
+      
     </>)
 
 }

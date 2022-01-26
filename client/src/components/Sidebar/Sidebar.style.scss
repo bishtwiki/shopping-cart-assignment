@@ -1,14 +1,15 @@
-
+       
 	.sidebar {
         height: 100%;
        
         background-color:rgb(226, 226, 226);
-        	ul {
+               
+        	ul  {
                 padding:0px;
                 margin:0px;
                
-			li {
-				 border-bottom: 1px solid rgb(197, 196, 196);
+               li  {
+		 border-bottom: 1px solid rgb(197, 196, 196);
                 text-decoration: none;
                 padding:13px 13px 13px 28px;
                 color: #818181;
@@ -16,5 +17,65 @@
                 list-style: none;
              	}
 		}
-	}
 
+                select{
+                        display: none;
+                }
+               
+	}
+        
+
+
+        // X-Small devices (portrait phones, less than 576px)
+        @media (max-width: 576px)  { 
+
+                
+                .col-ls-custom{
+                        flex: 100% ;
+                        max-width: 100%
+                }
+
+                .sidebar
+                {   
+                      
+                        width: 100%;
+                      position: relative;
+                      top:18px;
+                     ul{
+                                display: none;
+                       }
+                       .sidebar-dropdown{
+                               
+                        display:block;
+                        background: #b40707;
+                        width:100%;
+                       
+                }
+               
+                        select {
+                                padding: 10px 0px 10px 0px;
+                                position: relative;
+                                top: 0%;
+                                text-align: center;
+                                color: #fff;
+                                right:15px;
+
+                                option {
+                                      
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    
+                                      
+                                           }
+                               
+                        }
+                       
+                             
+
+                       } 
+                            
+                }
+
+
+        

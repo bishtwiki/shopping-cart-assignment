@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Cart from '../Cart/Cart.component'
 import logo from '../../assets/logo.png'
 import './Header.style.scss'
@@ -11,6 +11,10 @@ import { auth } from "../../firebase.util";
   /* Header Navigation */
 
 const Header = ({currentUser,hidden}) => {
+  const [isActive, setActive] = useState(false);
+  const toggleClass = () => {
+    setActive(!isActive);
+  };
   
  return (
         <>
@@ -38,7 +42,7 @@ const Header = ({currentUser,hidden}) => {
             <div className="row">
                 <div className="col-ls-12">
                 <div className="topnav">
-                <NavLink to="/">  <img className="logo" src={logo} alt="logo"></img></NavLink>
+                <NavLink to="#">  <img className='logo' onClick={toggleClass} src={logo} alt="logo"></img></NavLink>
               <ul className="header-container">
               <NavLink to="/">  <li>Home</li></NavLink>
               <NavLink to="products"> <li>Products</li></NavLink>
@@ -46,6 +50,16 @@ const Header = ({currentUser,hidden}) => {
              <CartIcon/> 
             </li>
             </ul>
+            {/* mobile nav menu */}
+            {isActive && <div className="nav-container">
+            <div className="close-nav" onClick={toggleClass}>x</div>
+              <NavLink to="/">  <a>Home</a> </NavLink>
+              <NavLink to="products"> <a>Products</a></NavLink>
+            <a className="topnav-right bg-cart">
+            
+            </a>
+            </div> }
+            
             { hidden ? <Cart/>:null}
             </div>
             </div>
