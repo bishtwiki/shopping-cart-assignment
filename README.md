@@ -8,8 +8,13 @@ Clone this repo and run following command for starting the mock server:
 
 ```
 npm install
+
 npm run dev
-# or
-yarn install
-yarn start
+
+# Server Api and client run concurently 
+
+# Responsive For mobile , tablet, Deesktop 
+# Breakpoints 
+# small screen - 576px 
+# tablet  -  768 px
 ```
